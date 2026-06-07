@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+# langchain4j测试模型
+langchain4j:
+  open-ai:
+    chat-model:
+      base-url: https://api.deepseek.com
+      api-key: sk-d6809f8523c840bc9f1735c544080d5a
+      model-name: deepseek-v4-flash
+      # 请求和响应日志
+      log-requests: true
+      log-responses: true
+  community:
+    dashscope:
+      chat-model:
+        api-key: sk-255506ca196b48f38e686b3e82efac58
+        model-name: qwen3-max
+# 启用日志debug级别
+logging:
+  level:
+    root: debug
