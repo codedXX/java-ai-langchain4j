@@ -27,3 +27,14 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/chat_memory_db
+  datasource:
+    url: jdbc:mysql://localhost:3306/guiguxiaozhi?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # MyBatis-Plus 配置
+  mybatis-plus:
+    configuration:
+      # 开启 SQL 日志打印
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
