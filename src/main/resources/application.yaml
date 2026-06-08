@@ -20,3 +20,7 @@ langchain4j:
 logging:
   level:
     root: debug
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/chat_memory_db
