@@ -16,10 +16,13 @@ langchain4j:
       chat-model:
         api-key: sk-255506ca196b48f38e686b3e82efac58
         model-name: qwen3-max
-# 启用日志debug级别
+# 日志级别配置
 logging:
   level:
-    root: debug
+    root: info                       # 根级别设为 info，屏蔽掉海量 debug 细节
+#    org.mongodb.driver: warn         # 单独压低 MongoDB 驱动日志（find/update 等命令明细）
+#    org.springframework.test: warn   # 屏蔽 Spring 测试上下文缓存统计
+#    sun.rmi: warn                    # 屏蔽 RMI/JMX 连接日志
 spring:
   data:
     mongodb:
