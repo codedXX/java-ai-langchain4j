@@ -25,4 +25,13 @@ public class ToolsTest {
         //答案：3，689706.4865
         System.out.println(answer);
     }
+
+    /**
+     * 测试 RAG：问一个只有知识库里才有答案的问题，验证 Redis 向量检索是否生效
+     */
+    @Test
+    public void testXiaozhiRag() {
+        String answer = xiaozhiAgent.chat(100, "北京协和医院的门诊开放时间是什么时候？地址在哪里？");
+        System.out.println(answer);
+    }
 }

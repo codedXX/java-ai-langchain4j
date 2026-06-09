@@ -26,6 +26,15 @@ logging:
 #    org.mongodb.driver: warn         # 单独压低 MongoDB 驱动日志（find/update 等命令明细）
 #    org.springframework.test: warn   # 屏蔽 Spring 测试上下文缓存统计
 #    sun.rmi: warn                    # 屏蔽 RMI/JMX 连接日志
+# RAG 向量库(Redis Stack)配置
+rag:
+  redis:
+    host: localhost
+    port: 6379
+    index-name: ragRedis        # RediSearch 索引名
+    prefix: "ragRedis:"         # 向量数据 key 前缀
+    dimension: 1024             # 向量维度，必须与 embedding 模型一致(text-embedding-v4 默认 1024)
+
 spring:
   data:
     mongodb:

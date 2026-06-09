@@ -104,6 +104,12 @@
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j-easy-rag</artifactId>
         </dependency>
+        <!--redis 向量数据库(RediSearch)-->
+        <dependency>
+            <groupId>dev.langchain4j</groupId>
+            <artifactId>langchain4j-community-redis</artifactId>
+            <version>1.3.0-beta9</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
