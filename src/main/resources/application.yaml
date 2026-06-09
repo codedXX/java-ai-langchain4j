@@ -19,6 +19,9 @@ langchain4j:
       embedding-model:
         api-key: sk-255506ca196b48f38e686b3e82efac58
         model-name: text-embedding-v4
+      streaming-chat-model:
+        api-key: sk-255506ca196b48f38e686b3e82efac58
+        model-name: qwen3-max
 # 日志级别配置
 logging:
   level:
