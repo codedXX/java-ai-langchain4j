@@ -16,6 +16,9 @@ langchain4j:
       chat-model:
         api-key: sk-255506ca196b48f38e686b3e82efac58
         model-name: qwen3-max
+      embedding-model:
+        api-key: sk-255506ca196b48f38e686b3e82efac58
+        model-name: text-embedding-v4
 # 日志级别配置
 logging:
   level:
@@ -30,7 +33,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/guiguxiaozhi?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
     username: root
-    password: 123456
+    password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   # MyBatis-Plus 配置
